@@ -1,0 +1,33 @@
+=== select_nested_rectangles Debug Log ===
+Total input contours: 19
+Candidate 0: area=853000, shape_score=4.68, angle_score=0.74, ratio_score=0.98, center=(1387.4560546875, 691.9541625976562), angle_rect=1.3
+Candidate 1: area=613638, shape_score=3.50, angle_score=0.75, ratio_score=0.69, center=(1387.78173828125, 695.6996459960938), angle_rect=1.2
+Contour 2: approximated vertices = 5, not 4, skipped.
+Candidate 2: area=157824, shape_score=0.82, angle_score=0.82, ratio_score=0.00, center=(1391.350341796875, 702.5875244140625), angle_rect=1.3
+Contour 4: approximated vertices = 13, not 4, skipped.
+Contour 5: approximated vertices = 8, not 4, skipped.
+Candidate 3: area=64518, shape_score=0.00, angle_score=0.00, ratio_score=0.00, center=(57.49122619628906, 581.38623046875), angle_rect=1.3
+Contour 7: approximated vertices = 5, not 4, skipped.
+Contour 8: approximated vertices = 3, not 4, skipped.
+Contour 9: approximated vertices = 5, not 4, skipped.
+Contour 10: approximated vertices = 8, not 4, skipped.
+Contour 11: approximated vertices = 6, not 4, skipped.
+Contour 12: approximated vertices = 5, not 4, skipped.
+Contour 13: approximated vertices = 3, not 4, skipped.
+Contour 14: approximated vertices = 5, not 4, skipped.
+Contour 15: approximated vertices = 7, not 4, skipped.
+Contour 16: approximated vertices = 8, not 4, skipped.
+Contour 17: approximated vertices = 10, not 4, skipped.
+Contour 18: approximated vertices = 2, not 4, skipped.
+Filtered rect_candidates count: 4 (sorted by area)
+Pair (outer=0, inner=1): shape_out=4.68, shape_in=3.50, center_score=0.96, orient_score=0.99, pixel_score=0.00, border_score=0.00, total=10.12
+    border_dists(px): top=76.7, right=68.1, bottom=69.2, left=68.9, range=8.6
+    -> New best pair (outer=0, inner=1) with score 10.12
+Pair (outer=0, inner=2): shape_out=4.68, shape_in=0.82, center_score=0.89, orient_score=1.00, pixel_score=0.00, border_score=0.00, total=7.38
+    border_dists(px): top=366.6, right=186.0, bottom=345.6, left=194.2, range=180.7
+Pair (outer=0, inner=3): inner contour not fully inside outer, skip.
+Pair (outer=1, inner=2): shape_out=3.50, shape_in=0.82, center_score=0.92, orient_score=0.99, pixel_score=0.00, border_score=0.00, total=6.22
+    border_dists(px): top=289.9, right=117.9, bottom=276.3, left=125.3, range=172.0
+Pair (outer=1, inner=3): inner contour not fully inside outer, skip.
+Pair (outer=2, inner=3): inner contour not fully inside outer, skip.
+Best pair found with score 10.12. Returning best outer/inner contours.

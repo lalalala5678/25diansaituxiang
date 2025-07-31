@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Robot — 参数调节</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>参数调节</h1>
+
+    <!-- 四个参数块 -->
+    <div id="params">
+        {% for name in ("p1", "p2", "p3", "p4") %}
+        <div class="param-block" data-name="{{ name }}">
+            <div class="value" id="{{ name }}">0</div>
+            <button class="btn inc">+</button>
+            <button class="btn dec">−</button>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- 保存按钮：把当前四个参数写入 params.txt -->
+    <button id="save-btn" class="btn save">保存参数</button>
+
+    <!-- 页面跳转链接 -->
+    <p><a href="{{ url_for('tasks_page') }}">→ 进入任务页面</a></p>
+    <p><a href="{{ url_for('camera_page') }}">→ 打开摄像头页面</a></p> <!-- ★ 新增 -->
+
+    <script src="{{ url_for('static', filename='js/params.js') }}"></script>
+</body>
+
+</html>
